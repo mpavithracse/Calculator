@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Calculator</title>
+</head>
+<body>
+    <div class="outerpart">
+        <input type="text" id="screen" class = "input_textbox">
+        <table >
+            <tr>
+                <td><button id="1" onclick="numbers(1)" >1</button></td>
+                <td><button id ="2" onclick="numbers(2)">2</button></td>
+                <td><button id ="3" onclick="numbers(3)">3</button></td>
+                <td><button id ="divide" onclick="operators(`divide`)">/</button></td>
+           </tr>
+           <tr>
+                <td><button id ="4" onclick="numbers(4)">4</button></td>
+                <td><button id ="5" onclick="numbers(5)">5</button></td>
+                <td><button id ="6" onclick="numbers(6)">6</button></td>
+                <td><button id ="multiply" onclick= "operators(`multiply`)">*</button></td>
+           </tr>
+           <tr>
+                <td><button id ="7" onclick="numbers(7)">7</button></td>
+                <td><button id ="8" onclick="numbers(8)">8</button></td>
+                <td><button id ="9" onclick="numbers(9)">9</button></td>
+                <td><button id ="subtract" onclick="operators(`subtract`)">-</button></td>
+           </tr>
+           <tr>
+                <td><button id="decimal" onclick="numbers(`decimal`)">.</button></td>
+                <td><button id="0" onclick="numbers(7)">0</button></td>
+                <td><button id="calculation" onclick="calculate()">=</button></td>
+                <td><button id="add" onclick="operators(`add`)">+</button></td>
+           </tr>
+        </table>
+        <button id="clear" onclick="clearscreen()">Clear</button>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
